@@ -17,7 +17,7 @@
         <div class="collapse-navbar-collapse" id="navbarNav">
             <ul class="navbar-navn ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Ragister Student</a>
+                    <a class="nav-link" href="index.html">Register Student</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link activ" href="allData.html">View All Students</a>
@@ -27,6 +27,41 @@
         </div>
         </div>
     </nav>
+
+    <!-- ---------input-------- -->
+
+    <div class="container mt-5">
+        <h1 class="text-center">Student Registration</h1>
+        <form id="studentForm">
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" required>
+            </div>
+            <div class="mb-3">
+                <label for="roll" class="form-label">Roll</label>
+                <input type="text" class="form-control" id="roll" required>
+            </div>
+            <div class="mb-3">
+                <label for="class" class="form-label">Class</label>
+                <input type="text" class="form-control" id="class" required>
+            </div>
+            <div class="mb-3">
+                <label for="mobileNo" class="form-label">Mobile Number</label>
+                <input type="text" class="form-control" id="mobileNo" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" required>
+            </div>
+            <button type="submit" class="btn-btn-primary">Register</button>
+            
+
+        </form>
+    </div>
 
     <div class="container mt-5">
         <h1 class="text-center">All Registered Students</h1>
@@ -42,6 +77,9 @@
                     <th>Action</th>
                 </tr>
             </thead>
+            <tbody id="studentTableBody">
+
+            </tbody>
         </table>
 
     </div>
